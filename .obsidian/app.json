@@ -1,0 +1,20 @@
+{
+  "defaultViewMode": "preview",
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "visible",
+  "showLineNumber": false,
+  "autoConvertHtml": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./attachments",
+  "showInlineTitle": true,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "newFileFolderPath": "Temp",
+  "userIgnoreFilters": [
+    "Scripts/",
+    "Temp/"
+  ]
+}
