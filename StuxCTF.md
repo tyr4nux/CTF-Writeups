@@ -6,6 +6,7 @@ tags:
   - Scripting
   - LFI
   - Deserialization
+  - RCE
   - Sudo
 ---
 <https://tryhackme.com/room/stuxctf/>
