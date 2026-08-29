@@ -11,6 +11,9 @@ Append to the `/etc/hosts` file:
 <IP-TARGET> <MACHINE>.htb
 ```
 # Enumeration
+
+Port scanning:
+
 ```console
 $ nmap -p<PORT1,PORT2> -sV -sC <MACHINE>.htb
 
