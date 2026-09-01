@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "04b33d3cdc06b29c",
+        "id": "0e79732cdb9ead92",
         "type": "tabs",
         "children": [
           {
-            "id": "265d905aa4320b98",
+            "id": "5d011036339b18c9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ffuf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -147,10 +147,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "265d905aa4320b98",
+  "active": "5d011036339b18c9",
   "lastOpenFiles": [
+    "Plotted-TMS.md",
     "StuxCTF.md",
     "Templates/Machine Writeup.md",
+    "Bookstore.md",
+    "0day.md",
+    "Binary Heaven.md",
     "Temp/Anthem.md",
     "Archangel.md",
     "Billing.md",
@@ -171,10 +175,6 @@
     "Jax sucks alot..............md",
     "GLITCH.md",
     "The Planets Mercury.md",
-    "Moebius.md",
-    "Wekor.md",
-    "Pickle Rick.md",
-    "Artificial.md",
     "Temp/Untitled.base",
     "Scripts/machine_names.py~",
     "Scripts/tags.py~",
