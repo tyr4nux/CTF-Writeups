@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0e79732cdb9ead92",
+        "id": "7c0124a5407de3fc",
         "type": "tabs",
         "children": [
           {
-            "id": "5d011036339b18c9",
+            "id": "73288c0524d14526",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ffuf",
+                "query": "timer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5,
-    "collapsed": true
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,17 +146,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5d011036339b18c9",
+  "active": "73288c0524d14526",
   "lastOpenFiles": [
-    "Plotted-TMS.md",
-    "StuxCTF.md",
+    "Nexus.md",
     "Templates/Machine Writeup.md",
+    "Cheese CTF.md",
+    "Temp/Anthem.md",
+    "Cap.md",
+    "Billing.md",
+    "Temp/Conversor.md",
+    "Temp/Tags.md",
+    "Wekor.md",
+    "Plotted-TMS.md",
+    "Moebius.md",
+    "dogcat.md",
+    "StuxCTF.md",
     "Bookstore.md",
     "0day.md",
     "Binary Heaven.md",
-    "Temp/Anthem.md",
     "Archangel.md",
-    "Billing.md",
     "Lookup.md",
     "JPGChat.md",
     "Agent Sudo.md",
@@ -166,15 +173,7 @@
     "h4cked.md",
     "Gotta Catch'em All!.md",
     "Creative.md",
-    "Cheese CTF.md",
     "Cat Pictures 2.md",
-    "Whiterose.md",
-    "Opacity.md",
-    "Lian_Yu.md",
-    "Kenobi.md",
-    "Jax sucks alot..............md",
-    "GLITCH.md",
-    "The Planets Mercury.md",
     "Temp/Untitled.base",
     "Scripts/machine_names.py~",
     "Scripts/tags.py~",
