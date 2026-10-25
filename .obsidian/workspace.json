@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Temp/Robots.md",
+                "file": "Robots.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
@@ -67,8 +67,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -89,7 +88,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Temp/Robots.md",
+                "file": "Robots.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -143,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 277.1640625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,10 +152,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ce45b5849e84534",
+  "active": "f47d5c706d635d5c",
   "lastOpenFiles": [
     "Operation Endgame.md",
-    "Temp/Robots.md",
+    "Robots.md",
     "Creative.md",
     "Templates/Machine Writeup.md",
     "Binary Heaven.md",
