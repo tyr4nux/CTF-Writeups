@@ -3,7 +3,7 @@ tags:
   - THM
   - Linux
   - Medium
-  - ShellShock
+  - Shellshock
   - RCE
   - Kernel
 ---

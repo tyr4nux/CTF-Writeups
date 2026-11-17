@@ -1,78 +1,105 @@
-# Allowed
+# Change
 
-- AD
-- API
-- AS-REP
-- AlwaysInstallElevated
+- CMS -> Wordpress
+- DNS-Spoof
+- File-Analysis
+- Forwarding -> Port-Forwarding
+- KeePass
+- Leakage -> Info-Disclosure
+- Log-Poisoning
+- Port-Knocking
+- RCE
+- Security-SW -> AppArmor
+
+# Platform
+
+- HTB
+- THM
+- VulnHub
+
+# Difficulty
+
+- Easy
+- Hard
+- Insane
+- Medium
+
+# OS
+
+- Challenge
+- Linux
+- Windows
+
+# Vulnerability
+
 - Auth-Bypass
 - BOF
-- Brute-Force
-- CMS
-- Capabilities
-- Challenge
-- Cookie-HJ
-- Cron
+- Cmd-Injection
 - CSRF
+- Default-Creds
 - CVE
-- DCSync
-- DNS-Spoof
 - Deserialization
-- Docker
-- Easy
-- File-Analysis
 - File-Upload
-- Forwarding
-- Git
-- HTB
-- Hard
 - IDOR
-- KeePass
-- Kerberoasting
 - Kernel
 - LFI
-- Leakage
-- Lib-HJ
-- Linux
 - Log4Shell
-- Medium
-- Metasploit
-- PATH-HJ
-- Port-Knock
-- PtH
-- PtT
-- PwnKit
-- RBCD
-- RCE
 - RFI
 - Race-Condition
-- Responder
+- Shellshock
 - SQLi
 - SSRF
 - SSTI
-- SUID
-- Scripting
-- SeBackupPrivilege
-- SeImpersonatePrivilege
-- Security-SW
-- ShellShock
-- Stego
-- Sudo
-- Systemd
-- THM
-- VulnHub
-- Windows
 - XSS
 - XXE
 
-# Add
+# Technology
 
-- DirtyPipe
-- Forensics
+- API
+- CMS
+- Git
+- JWT
+- WordPress
 
-# Remove
+# Technique
 
-- Auth-Bypass
-- KeePass
-- Log-Poisoning
+- Brute-Force
+- Cookie-HJ
+- Cracking
+- Fuzzing
+- Lib-HJ
+- PATH-HJ
+
+# Tools
+
+- Metasploit
 - Responder
-- Port-Knock
+
+# Linux
+
+- Capabilities
+- Cron
+- Docker
+- PwnKit
+- Sudo
+- SUID
+- Systemd
+
+# Windows
+
+- AD
+- AS-REP
+- AlwaysInstallElevated
+- DCSync
+- Kerberoasting
+- PtH
+- PtT
+- RBCD
+- Schtasks
+- SeBackupPrivilege
+- SeImpersonatePrivilege
+
+# Others
+
+- Scripting
+- Stego

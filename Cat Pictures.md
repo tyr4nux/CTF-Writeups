@@ -3,7 +3,7 @@ tags:
   - THM
   - Linux
   - Easy
-  - Port-Knock
+  - Port-Knocking
   - Brute-Force
   - Leakage
   - RCE

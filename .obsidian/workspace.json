@@ -4,26 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bdc692b29164c1e1",
+        "id": "b8ffc0ba97fdd3b4",
         "type": "tabs",
         "children": [
           {
-            "id": "19f3de97b02be89f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ra.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Ra"
-            }
-          },
-          {
-            "id": "de59c0684ffcc503",
+            "id": "9a1871736274f34a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -37,8 +22,7 @@
               "title": "Tags"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "analysis",
+                "query": "path:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,10 +151,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "de59c0684ffcc503",
+  "active": "9a1871736274f34a",
   "lastOpenFiles": [
-    "Ra.md",
+    "Templates/Machine Writeup.md",
     "Temp/Tags.md",
+    "Scripts/swap.py",
+    "0day.md",
+    "Billing.md",
+    "Airplane.md",
+    "Red.md",
+    "TwoMillion.md",
+    "Temp/Conversor.md",
+    "mKingdom.md",
+    "Light.md",
+    "Ra.md",
+    "Cat Pictures.md",
     "Binary Heaven.md",
     "Creative.md",
     "Robots.md",
@@ -178,23 +173,12 @@
     "Moebius.md",
     "Smol.md",
     "Operation Endgame.md",
-    "Templates/Machine Writeup.md",
     "Pickle Rick.md",
     "Obscure.md",
     "Gatekeeper.md",
     "RazorBlack.md",
     "Wekor.md",
     "Breakme.md",
-    "Cat Pictures 2.md",
-    "VulnNet.md",
-    "Cap.md",
-    "Archangel.md",
-    "Nexus.md",
-    "Temp/Anthem.md",
-    "Billing.md",
-    "Temp/Conversor.md",
-    "Plotted-TMS.md",
-    "dogcat.md",
     "Temp/Untitled.base",
     "Scripts/machine_names.py~",
     "Scripts/tags.py~",
@@ -204,7 +188,6 @@
     "Scripts/registered.txt",
     "Scripts/script.txt",
     "Temp/python",
-    "Temp/markdown",
     "Cap/attachments/nmap.png",
     "Cap/attachments/setuid.png",
     "Cap/attachments/ssh.png",
