@@ -1,4 +1,5 @@
-# All
+# Allowed
+
 - AD
 - API
 - AS-REP
@@ -11,6 +12,8 @@
 - Challenge
 - Cookie-HJ
 - Cron
+- CSRF
+- CVE
 - DCSync
 - DNS-Spoof
 - Deserialization
@@ -21,6 +24,7 @@
 - Forwarding
 - Git
 - HTB
+- Hard
 - IDOR
 - KeePass
 - Kerberoasting
@@ -29,16 +33,19 @@
 - Leakage
 - Lib-HJ
 - Linux
-- Log-Poisoning
 - Log4Shell
 - Medium
 - Metasploit
 - PATH-HJ
 - Port-Knock
 - PtH
+- PtT
 - PwnKit
+- RBCD
 - RCE
+- RFI
 - Race-Condition
+- Responder
 - SQLi
 - SSRF
 - SSTI
@@ -58,12 +65,14 @@
 - XXE
 
 # Add
-- CSRF
+
 - DirtyPipe
 - Forensics
 
-# Delete
+# Remove
+
 - Auth-Bypass
 - KeePass
+- Log-Poisoning
 - Responder
 - Port-Knock
