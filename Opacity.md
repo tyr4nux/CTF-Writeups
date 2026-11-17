@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - File-Upload
   - RCE
   - KeePass

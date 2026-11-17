@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - Leakage
   - Brute-Force
   - PwnKit

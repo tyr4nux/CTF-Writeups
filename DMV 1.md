@@ -1,8 +1,8 @@
 ---
 tags:
   - VulnHub
-  - Linux
   - Easy
+  - Linux
   - RCE
   - Cron
   - PwnKit

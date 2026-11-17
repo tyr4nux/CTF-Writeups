@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - RCE
   - Security-SW
   - File-Analysis

@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - SQLi
   - LFI
   - RCE

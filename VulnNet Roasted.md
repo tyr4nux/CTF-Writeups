@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Windows
   - Easy
+  - Windows
   - AD
   - Brute-Force
   - AS-REP

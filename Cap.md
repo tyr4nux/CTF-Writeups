@@ -1,10 +1,10 @@
 ---
 tags:
   - HTB
-  - Linux
   - Easy
+  - Linux
   - IDOR
-  - Leakage
+  - Info-Disclosure
   - Capabilities
 ---
 https://app.hackthebox.com/machines/Cap/
@@ -32,7 +32,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Found http://cap.htb/data/0.pcap file which **leaked** some **credentials**:
+Found `/data/0.pcap` file which **leaked** some **credentials**:
 ```console
 $ tcpdump -r 0.pcap | grep FTP
 

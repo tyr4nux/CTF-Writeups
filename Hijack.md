@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - Leakage
   - Scripting
   - Cookie-HJ

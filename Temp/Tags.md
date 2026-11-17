@@ -2,7 +2,7 @@
 
 - CMS -> Wordpress
 - DNS-Spoof
-- File-Analysis
+- File-Analysis -> Bin-Analysis
 - Forwarding -> Port-Forwarding
 - KeePass
 - Leakage -> Info-Disclosure
@@ -70,6 +70,12 @@
 - Lib-HJ
 - PATH-HJ
 
+# Files
+
+- Reversing
+- Scripting
+- Stego
+
 # Tools
 
 - Metasploit
@@ -98,8 +104,3 @@
 - Schtasks
 - SeBackupPrivilege
 - SeImpersonatePrivilege
-
-# Others
-
-- Scripting
-- Stego

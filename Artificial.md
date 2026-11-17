@@ -1,14 +1,12 @@
 ---
 tags:
   - HTB
-  - Linux
   - Easy
-  - File-Upload
+  - Linux
   - Docker
-  - RCE
-  - Leakage
-  - Brute-Force
-  - Forwarding
+  - Deserialization
+  - Cracking
+  - Port-Forwarding
 ---
 https://app.hackthebox.com/machines/Artificial/
 # Add Hosts
@@ -251,3 +249,4 @@ ssh -i id_rsa root@artificial.htb
 Get the **root flag**:
 ```bash
 cat /root/root.txt
+```

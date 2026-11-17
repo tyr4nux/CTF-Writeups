@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Windows
   - Medium
+  - Windows
   - Leakage
   - BOF
   - Scripting

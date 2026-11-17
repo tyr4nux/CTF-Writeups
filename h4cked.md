@@ -2,8 +2,8 @@
 tags:
   - THM
   - Easy
-  - Linux
   - Challenge
+  - Linux
   - File-Analysis
   - Brute-Force
   - File-Upload

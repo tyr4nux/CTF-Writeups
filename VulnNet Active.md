@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Windows
   - Medium
+  - Windows
   - Responder
   - Brute-Force
   - Cron

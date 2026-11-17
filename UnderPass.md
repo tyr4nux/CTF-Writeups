@@ -1,8 +1,8 @@
 ---
 tags:
   - HTB
-  - Linux
   - Easy
+  - Linux
   - Brute-Force
   - Sudo
 ---

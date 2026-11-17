@@ -1,8 +1,8 @@
 ---
 tags:
   - HTB
-  - Linux
   - Easy
+  - Linux
   - Auth-Bypass
   - File-Upload
   - Leakage

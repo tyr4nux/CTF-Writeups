@@ -1,13 +1,15 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
+  - Linux
   - API
+  - Fuzzing
   - LFI
-  - RCE
+  - Info-Disclosure
+  - Cmd-Injection
   - SUID
-  - File-Analysis
+  - Reversing
 ---
 https://tryhackme.com/room/bookstoreoc/
 # Add Hosts
@@ -110,8 +112,8 @@ As we can see, we found the **debugger pin**.
 Found an interactive Python console at `/console` (port 5000). However, it is blocked by an **access PIN**, which is the one we found earlier.
 
 Now, we listen for connections:
-```console
-$ nc -lnvp 4444
+```bash
+nc -lnvp 4444
 ```
 
 Finally, we get the reverse shell through Python:

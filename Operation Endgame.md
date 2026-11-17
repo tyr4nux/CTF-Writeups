@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Windows
   - Hard
+  - Windows
   - AD
   - Kerberoasting
   - Brute-Force

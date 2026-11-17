@@ -1,12 +1,14 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
-  - Leakage
+  - Linux
+  - Info-Disclosure
+  - Fuzzing
   - Brute-Force
   - Stego
   - Sudo
+  - CVE
 ---
 https://tryhackme.com/room/agentsudoctf/
 # Add Hosts
@@ -63,7 +65,7 @@ Also, change your god damn password, is weak!
 From,  
 Agent R
 ```
-Crack FTP password for **chris**:
+Brute-force FTP password for **chris**:
 ```console
 $ hydra -l chris -P /usr/share/dict/rockyou.txt ftp://agentsudo.thm
 

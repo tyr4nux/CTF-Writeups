@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - Auth-Bypass
   - IDOR
   - Leakage

@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b8ffc0ba97fdd3b4",
+        "id": "1ee69cc17fca6d96",
         "type": "tabs",
         "children": [
           {
-            "id": "9a1871736274f34a",
+            "id": "b32ed3aea1f7984b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Temp/Tags.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tags"
+              "title": "New tab"
             }
           }
         ]
@@ -56,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:",
+                "query": ".pcap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +62,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -87,7 +83,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Temp/Tags.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -151,43 +146,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a1871736274f34a",
+  "active": "b32ed3aea1f7984b",
   "lastOpenFiles": [
-    "Templates/Machine Writeup.md",
     "Temp/Tags.md",
-    "Scripts/swap.py",
+    "Valley.md",
+    "Cap.md",
     "0day.md",
-    "Billing.md",
-    "Airplane.md",
-    "Red.md",
-    "TwoMillion.md",
-    "Temp/Conversor.md",
-    "mKingdom.md",
-    "Light.md",
-    "Ra.md",
-    "Cat Pictures.md",
-    "Binary Heaven.md",
-    "Creative.md",
-    "Robots.md",
-    "Cheese CTF.md",
-    "Moebius.md",
-    "Smol.md",
-    "Operation Endgame.md",
-    "Pickle Rick.md",
-    "Obscure.md",
-    "Gatekeeper.md",
-    "RazorBlack.md",
-    "Wekor.md",
+    "IDE.md",
+    "Templates/Machine Writeup.md",
+    "Capture!.md",
     "Breakme.md",
-    "Temp/Untitled.base",
-    "Scripts/machine_names.py~",
-    "Scripts/tags.py~",
-    "Scripts/tags.py",
-    "Scripts/check_names.py~",
-    "Scripts/machine_names.py",
-    "Scripts/registered.txt",
-    "Scripts/script.txt",
-    "Temp/python",
+    "Bookstore.md",
+    "Artificial.md",
+    "Billing.md",
+    "Binary Heaven.md",
+    "Blueprint.md",
+    "Archangel.md",
+    "Airplane.md",
+    "Agent Sudo.md",
+    "Temp/Conversor.md",
+    "Team.md",
+    "RazorBlack.md",
+    "Tony the Tiger.md",
+    "dogcat.md",
+    "SafeZone.md",
+    "Jacob the Boss.md",
+    "Cat Pictures.md",
+    "Compiled.md",
+    "h4cked.md",
+    "Smol.md.tmp",
+    "Whiterose.md.tmp",
+    "0day.md.tmp",
+    "Wekor.md.tmp",
+    "Robots.md.tmp",
+    "Artificial.md.tmp",
+    "Cat Pictures.md.tmp",
+    "Nexus.md.tmp",
+    "Bookstore.md.tmp",
+    "SafeZone.md.tmp",
     "Cap/attachments/nmap.png",
     "Cap/attachments/setuid.png",
     "Cap/attachments/ssh.png",

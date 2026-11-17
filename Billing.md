@@ -1,9 +1,10 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
-  - RCE
+  - Linux
+  - CVE
+  - Cmd-Injection
   - Sudo
 ---
 https://tryhackme.com/room/billing/

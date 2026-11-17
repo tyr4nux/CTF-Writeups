@@ -1,10 +1,10 @@
 ---
 tags:
   - THM
-  - Linux
   - Easy
+  - Linux
   - LFI
-  - RCE
+  - Log-Poisoning
   - Cron
   - SUID
   - PATH-HJ

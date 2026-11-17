@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
+  - Linux
   - Leakage
   - LFI
   - Brute-Force

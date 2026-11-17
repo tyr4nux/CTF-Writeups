@@ -1,10 +1,9 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
+  - Linux
   - Shellshock
-  - RCE
   - Kernel
 ---
 https://tryhackme.com/room/0day/
@@ -30,7 +29,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Using `ffuf`, found the directory and file path `/cgi-bin/test.cgi` in the web server. So, detected possible **ShellShock attack**:
+Using `ffuf`, found the directory and file path `/cgi-bin/test.cgi` in the web server. So, detected possible **Shellshock attack**:
 ```console
 $ nmap --script http-shellshock --script-args uri=/cgi-bin/test.cgi 0day.thm
 
@@ -102,6 +101,7 @@ $ cat /home/ryan/user.txt
 The Linux Kernel is very outdated:
 ```console
 $ uname -a
+
 Linux ubuntu 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 ```
 

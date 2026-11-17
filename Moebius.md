@@ -1,8 +1,8 @@
 ---
 tags:
   - THM
-  - Linux
   - Hard
+  - Linux
   - SQLi
   - LFI
   - Scripting

@@ -1,8 +1,8 @@
 ---
 tags:
   - HTB
-  - Linux
   - Easy
+  - Linux
   - RCE
 ---
 https://app.hackthebox.com/machines/Lame/
