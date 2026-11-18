@@ -4,7 +4,6 @@ tags:
   - Easy
   - Linux
   - Info-Disclosure
-  - Default-Creds
   - CVE
   - File-Upload
   - Sudo

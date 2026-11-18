@@ -3,9 +3,9 @@ tags:
   - HTB
   - Easy
   - Linux
+  - CVE
   - Auth-Bypass
   - File-Upload
-  - Leakage
   - Systemd
   - Git
   - Scripting

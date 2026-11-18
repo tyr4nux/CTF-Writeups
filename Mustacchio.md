@@ -3,14 +3,12 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - Brute-Force
+  - Info-Disclosure
+  - Cracking
   - XXE
   - SUID
-  - File-Analysis
   - PATH-HJ
   - PwnKit
-  - Security-SW
 ---
 https://tryhackme.com/room/mustacchio/
 # Add Hosts

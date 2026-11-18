@@ -1,3 +1,9 @@
+# Temp Scripts
+
+- Change tag name for another.
+- Check for files with `john` / `hashcat` / `crackstation` but no `Cracking` tag.
+- Check for files with `CVE` but no tag.
+
 # Change
 
 - CMS -> Wordpress
@@ -36,7 +42,6 @@
 - BOF
 - Cmd-Injection
 - CSRF
-- Default-Creds
 - CVE
 - Deserialization
 - File-Upload

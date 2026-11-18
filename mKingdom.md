@@ -4,13 +4,10 @@ tags:
   - Easy
   - Linux
   - CMS
+  - CVE
   - File-Upload
-  - RCE
-  - Leakage
   - Cron
-  - Scripting
-  - DNS-Spoof
-  - Security-SW
+  - DNS-HJ
 ---
 https://tryhackme.com/room/mkingdom/
 # Add Hosts
@@ -28,7 +25,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: 0H N0! PWN3D 4G4IN
 ```
 # Enumeration
-Found http://mkingdom.thm:85/app/ directory:
+Found `/app/` directory:
 ```console
 $ gobuster dir -q -u http://mkingdom.thm:85 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
 
@@ -151,13 +148,11 @@ Launch a **root** bash session after `/bin/bash` gets **SUID permissions**:
 ```bash
 /bin/bash -p
 ```
-Can not read **root flag** because **AppArmor** is enabled:
+Can not read **root flag** using `cat`:
 ```console
 # cat /root/root.txt
-cat: root.txt: Permission denied
 
-# aa-enabled
-Yes
+cat: root.txt: Permission denied
 ```
 Read **root flag** using alternative commands:
 ```bash

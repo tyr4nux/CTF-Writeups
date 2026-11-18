@@ -6,7 +6,7 @@ tags:
   - LFI
   - Brute-Force
   - Cron
-  - DNS-Spoof
+  - DNS-HJ
   - PwnKit
 ---
 https://tryhackme.com/room/redisl33t/

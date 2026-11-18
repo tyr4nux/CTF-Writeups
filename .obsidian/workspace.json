@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0dfe43f30b647ccf",
+        "id": "0b780e00362ab409",
         "type": "tabs",
         "children": [
           {
-            "id": "527f3ae402c84e8a",
+            "id": "29c522ca70f6037f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mKingdom.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "mKingdom"
+              "title": "New tab"
             }
           }
         ]
@@ -56,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:",
+                "query": "crackstation -tag:#Cracking",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +82,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mKingdom.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -152,34 +146,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "527f3ae402c84e8a",
+  "active": "29c522ca70f6037f",
   "lastOpenFiles": [
-    "Lumberjack Turtle.md",
-    "Lookup.md",
-    "Bookstore.md",
-    "Breakme.md",
-    "Cat Pictures.md",
-    "Gatekeeper.md",
-    "Lo-Fi.md",
-    "Kenobi.md",
-    "Lame.md",
-    "Lian_Yu.md",
-    "Light.md",
-    "Jacob the Boss.md",
-    "Compiled.md",
-    "Binary Heaven.md",
-    "Archangel.md",
     "Temp/Tags.md",
-    "JPGChat.md",
-    "Jax sucks alot..............md",
-    "Cat Pictures 2.md",
+    "Nexus.md",
+    "Mustacchio.md",
+    "Moebius.md",
+    "mKingdom.md",
+    "Tony the Tiger.md",
+    "dogcat.md",
+    "Editor.md",
+    "Code.md",
+    "Cheese CTF.md",
+    "Compiled.md",
+    "Creative.md",
+    "DMV 1.md",
+    "Debug.md",
+    "CyberLens.md",
+    "Airplane.md",
     "IDE.md",
-    "Templates/Machine Writeup.md",
+    "Agent Sudo.md",
+    "0day.md",
     "Hijack.md",
-    "h4cked.md",
-    "Gotta Catch'em All!.md",
+    "Gatekeeper.md",
     "Capture!.md",
-    "GLITCH.md",
+    "Binary Heaven.md",
+    "Lumberjack Turtle.md",
+    "Red.md",
+    "Lookup.md",
     "Smol.md.tmp",
     "Whiterose.md.tmp",
     "0day.md.tmp",
