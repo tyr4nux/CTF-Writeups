@@ -2,18 +2,17 @@
 
 - Change tag name for another.
 - Check for files with `john` / `hashcat` / `crackstation` but no `Cracking` tag.
-- Check for files with `CVE` but no tag.
+- Check for files with `CVE` but no `CVE` tag.
+- Check for files with `fuzz` but no `Fuzzing` tag.
+- Check for files with `wp` / `wordpress` but no `WordPress` tag.
 
 # Change
 
 - CMS -> Wordpress
-- DNS-Spoof
 - File-Analysis -> Reversing
 - Forwarding -> Port-Forwarding
 - KeePass
 - Leakage -> Info-Disclosure
-- Log-Poisoning
-- Port-Knocking
 - RCE -> Cmd-Injection / Code-Injection
 - Security-SW -> AppArmor
 
@@ -41,11 +40,13 @@
 - Auth-Bypass
 - BOF
 - Cmd-Injection
+- Code-Injection
 - CSRF
 - CVE
 - Deserialization
 - File-Upload
 - IDOR
+- Info-Disclosure
 - Kernel
 - LFI
 - Log4Shell
@@ -66,18 +67,24 @@
 - JWT
 - WordPress
 
-# Technique
+# Enumeration
+
+- Port-Forwarding
+- Port-Knocking
+
+# Exploitation Technique
 
 - Brute-Force
 - Cookie-HJ
 - Cracking
+- DNS-HJ
 - Fuzzing
 - Lib-HJ
+- Log-Poisoning
 - PATH-HJ
 
 # Files
 
-- File-Analysis
 - PCAP
 - Reversing
 - Scripting

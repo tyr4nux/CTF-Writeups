@@ -3,7 +3,7 @@ tags:
   - THM
   - Medium
   - Linux
-  - CMS
+  - WordPress
   - LFI
   - Leakage
   - RCE

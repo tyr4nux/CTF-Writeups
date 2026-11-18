@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b780e00362ab409",
+        "id": "08aaad707121d86a",
         "type": "tabs",
         "children": [
           {
-            "id": "29c522ca70f6037f",
+            "id": "a9e26c7b62f7cc6d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "crackstation -tag:#Cracking",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,20 +142,24 @@
     "hiddenItems": {
       "templates:Insert template": false,
       "graph:Open graph view": false,
-      "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "29c522ca70f6037f",
+  "active": "a9e26c7b62f7cc6d",
   "lastOpenFiles": [
-    "Temp/Tags.md",
+    "Obscure.md",
     "Nexus.md",
+    "Smol.md",
+    "mKingdom.md",
+    "Editor.md",
+    "Cat Pictures 2.md",
+    "Temp/Tags.md",
+    "Breakme.md",
     "Mustacchio.md",
     "Moebius.md",
-    "mKingdom.md",
     "Tony the Tiger.md",
     "dogcat.md",
-    "Editor.md",
     "Code.md",
     "Cheese CTF.md",
     "Compiled.md",
@@ -170,10 +174,6 @@
     "Hijack.md",
     "Gatekeeper.md",
     "Capture!.md",
-    "Binary Heaven.md",
-    "Lumberjack Turtle.md",
-    "Red.md",
-    "Lookup.md",
     "Smol.md.tmp",
     "Whiterose.md.tmp",
     "0day.md.tmp",

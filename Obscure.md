@@ -3,9 +3,9 @@ tags:
   - THM
   - Medium
   - Linux
-  - File-Analysis
+  - Reversing
+  - CVE
   - Deserialization
-  - RCE
   - Docker
   - SUID
   - BOF
@@ -54,7 +54,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
 ## FTP
-Found a files with anonymous login:
+Found files with anonymous login:
 ```console
 $ ftp anonymous@obscure.thm
 Password:
@@ -138,8 +138,8 @@ $ python2 gen.py
 $ nc -lvnp 4444
 ```
 Finally, follow the instructions of the exploit to upload the serialized payload and get the reverse shell connection and the **initial flag**:
-```console
-$ cat /var/lib/odoo/flag.txt
+```bash
+cat /var/lib/odoo/flag.txt
 ```
 # Post-Exploitation
 ## Owning Docker

@@ -3,7 +3,6 @@ tags:
   - THM
   - Easy
   - Linux
-  - CMS
   - Stego
   - Info-Disclosure
   - Git
