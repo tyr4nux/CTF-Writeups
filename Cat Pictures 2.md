@@ -4,11 +4,12 @@ tags:
   - Easy
   - Linux
   - CMS
-  - File-Analysis
-  - Leakage
+  - Stego
+  - Info-Disclosure
   - Git
-  - RCE
+  - Cmd-Injection
   - Sudo
+  - CVE
 ---
 https://tryhackme.com/room/catpictures2/
 # Add Hosts
@@ -188,11 +189,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 ## Summary
 - 22: SSH
-- [80](http://cats2.thm:80/): photo management website using [Lychee](https://github.com/LycheeOrg/Lychee).
+- 80: photo management website using [Lychee](https://github.com/LycheeOrg/Lychee).
 - 222: SSH
-- [1337](http://cats2.thm:1337/): website to run predefined commands using [OliveTin](https://www.olivetin.app/).
-- [3000](http://cats2.thm:3000/): self-hosted git repository using [Gitea](https://about.gitea.com/).
-- [8080](http://cats2.thm:8080/): [nginx](https://nginx.org/) default website.
+- 1337: website to run predefined commands using [OliveTin](https://www.olivetin.app/).
+- 3000: self-hosted git repository using [Gitea](https://about.gitea.com/).
+- 8080: [nginx](https://nginx.org/) default website.
 # Enumeration
 ## OliveTin
 The available commands to run are:

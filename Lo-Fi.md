@@ -14,13 +14,13 @@ Append to the `/etc/hosts` file:
 # Scanning
 The machine's description tells us that there is a website running and that we should find  the flag in the **root of the filesystem**.
 # Discovery
-The website has a navigation panel with the following links:
-- http://lofi.thm/?page=relax.php
-- http://lofi.thm/?page=sleep.php
-- http://lofi.thm/?page=chill.php
-- http://lofi.thm/?page=coffee.php
-- http://lofi.thm/?page=vibe.php
-- http://lofi.thm/?page=game.php
+The website has a navigation panel with the following endpoints:
+- `/?page=relax.php`
+- `/?page=sleep.php`
+- `/?page=chill.php`
+- `/?page=coffee.php`
+- `/?page=vibe.php`
+- `/?page=game.php`
 # Exploitation
 If we try to include a file such as `/?page=/etc/passwd`, the website shows:
 ```text

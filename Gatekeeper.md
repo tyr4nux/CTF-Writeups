@@ -3,7 +3,7 @@ tags:
   - THM
   - Medium
   - Windows
-  - Leakage
+  - Reversing
   - BOF
   - Scripting
 ---

@@ -4,7 +4,6 @@ tags:
   - Easy
   - Linux
   - Deserialization
-  - RCE
   - Sudo
 ---
 https://tryhackme.com/room/jason/

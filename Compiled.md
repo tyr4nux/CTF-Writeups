@@ -3,7 +3,7 @@ tags:
   - THM
   - Easy
   - Challenge
-  - File-Analysis
+  - Reversing
 ---
 https://tryhackme.com/room/compiled/
 # Binary analysis
@@ -61,7 +61,7 @@ $ ./Test
 Password: DoYouEven%sCTF
 Value: %sCTF
 ```
-Looking at the source code, we need that content to be `_init_` and get the **password**:
+Looking at the source code, we need that content to be `_init` and get the **password**:
 ```console
 $ ./Compiled.Compiled
 

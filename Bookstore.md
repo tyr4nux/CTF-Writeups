@@ -7,7 +7,7 @@ tags:
   - Fuzzing
   - LFI
   - Info-Disclosure
-  - Cmd-Injection
+  - Code-Injection
   - SUID
   - Reversing
 ---

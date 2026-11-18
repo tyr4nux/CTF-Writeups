@@ -3,10 +3,11 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
+  - Info-Disclosure
   - Scripting
+  - Fuzzing
   - Cookie-HJ
-  - RCE
+  - Cmd-Injection
   - Sudo
   - Lib-HJ
 ---
@@ -180,7 +181,7 @@ Found: [Status=200] [Length=435] [Word=YWRtaW46ZDY1NzNlZDczOWFlN2ZkZmIzY2VkMTk3Z
 ```
 Steal **user admin** session by setting the **cookie** value to `PHPSESSID=YWRtaW46ZDY1NzNlZDczOWFlN2ZkZmIzY2VkMTk3ZDk0ODIwYTU`.
 # Exploitation
-The [administration panel](http://hijack.thm/administration.php) is a service status checker. For example, the output of `ssh` is:
+The administration panel `/administration.php` is a service status checker. For example, the output of `ssh` is:
 ```text
 * ssh.service - OpenBSD Secure Shell server
    Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
@@ -194,6 +195,7 @@ The [administration panel](http://hijack.thm/administration.php) is a service st
            `-1129 /usr/sbin/sshd -D
 ```
 The probable **backend execution** is `systemctl status <SERVICE>`.
+
 Successful **code execution** by inputting `$(whoami)`:
 ```text
 * www-data.service

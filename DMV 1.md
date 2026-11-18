@@ -3,7 +3,7 @@ tags:
   - VulnHub
   - Easy
   - Linux
-  - RCE
+  - Cmd-Injection
   - Cron
   - PwnKit
 ---

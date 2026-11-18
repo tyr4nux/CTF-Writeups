@@ -2,12 +2,11 @@
 tags:
   - THM
   - Easy
-  - Challenge
   - Linux
-  - File-Analysis
+  - Challenge
+  - PCAP
   - Brute-Force
   - File-Upload
-  - RCE
   - Sudo
 ---
 https://tryhackme.com/room/h4cked/

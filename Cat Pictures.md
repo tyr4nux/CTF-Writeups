@@ -5,9 +5,9 @@ tags:
   - Linux
   - Port-Knocking
   - Brute-Force
-  - Leakage
-  - RCE
-  - File-Analysis
+  - Info-Disclosure
+  - Cmd-Injection
+  - Reversing
   - Docker
   - Cron
 ---

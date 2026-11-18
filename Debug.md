@@ -3,9 +3,9 @@ tags:
   - THM
   - Medium
   - Linux
-  - Leakage
+  - Info-Disclosure
   - Deserialization
-  - RCE
+  - Cracking
 ---
 https://tryhackme.com/room/debug/
 # Add Hosts

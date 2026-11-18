@@ -3,9 +3,10 @@ tags:
   - THM
   - Easy
   - Windows
-  - RCE
-  - Metasploit
+  - CVE
+  - Cmd-Injection
   - AlwaysInstallElevated
+  - Metasploit
 ---
 https://tryhackme.com/room/cyberlensp6/
 # Add Hosts

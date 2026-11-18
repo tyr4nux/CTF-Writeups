@@ -4,8 +4,8 @@ tags:
   - Easy
   - Linux
   - API
-  - RCE
-  - Leakage
+  - Fuzzing
+  - Code-Injection
   - SUID
   - PwnKit
 ---

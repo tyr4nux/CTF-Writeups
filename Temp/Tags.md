@@ -2,13 +2,13 @@
 
 - CMS -> Wordpress
 - DNS-Spoof
-- File-Analysis -> Bin-Analysis
+- File-Analysis -> Reversing
 - Forwarding -> Port-Forwarding
 - KeePass
 - Leakage -> Info-Disclosure
 - Log-Poisoning
 - Port-Knocking
-- RCE
+- RCE -> Cmd-Injection / Code-Injection
 - Security-SW -> AppArmor
 
 # Platform
@@ -72,6 +72,8 @@
 
 # Files
 
+- File-Analysis
+- PCAP
 - Reversing
 - Scripting
 - Stego
@@ -83,6 +85,7 @@
 
 # Linux
 
+- AppArmor
 - Capabilities
 - Cron
 - Docker

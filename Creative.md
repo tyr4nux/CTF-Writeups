@@ -6,8 +6,8 @@ tags:
   - SSRF
   - Scripting
   - LFI
-  - Brute-Force
-  - Leakage
+  - Info-Disclosure
+  - Cracking
   - Sudo
   - Lib-HJ
 ---
@@ -33,7 +33,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Found [Beta URL Tester website](http://beta.creative.thm/) at subdomain `beta.creative.thm`, which allows to test a URL to see if it is alive and display its content. So, I created a Python script `scan.py` to list **internal open ports**:
+Found "Beta URL Tester website" at subdomain `beta.creative.thm`, which allows to test a URL to see if it is alive and display its content. So, I created a Python script `scan.py` to list **internal open ports**:
 ```python
 import requests
 import threading

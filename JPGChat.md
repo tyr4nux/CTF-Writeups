@@ -3,8 +3,7 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - RCE
+  - Cmd-Injection
   - Sudo
   - Lib-HJ
 ---

@@ -3,7 +3,7 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
+  - Info-Disclosure
   - Sudo
   - PwnKit
 ---

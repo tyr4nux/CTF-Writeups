@@ -3,8 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - RCE
+  - Info-Disclosure
+  - CVE
   - SUID
   - PATH-HJ
 ---
@@ -193,7 +193,7 @@ $ sudo mkdir /mnt/var
 $ sudo mount -t nfs kenobi.thm:/var /mnt/var
 ```
 # Exploitation
-**ProFTPd 1.3.5** is [vulnerable to RCE](https://www.exploit-db.com/exploits/36803), which allows to copy and paste files.
+**ProFTPd 1.3.5** is vulnerable to [CVE-2015-3306](https://www.exploit-db.com/exploits/36803), which allows to copy and paste files.
 
 Connect to ProFTPd with Netcat:
 ```bash

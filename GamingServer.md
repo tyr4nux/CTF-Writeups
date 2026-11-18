@@ -3,8 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - Brute-Force
+  - Info-Disclosure
+  - Cracking
   - PwnKit
 ---
 https://tryhackme.com/room/gamingserver/

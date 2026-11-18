@@ -3,7 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
+  - Fuzzing
+  - Info-Disclosure
   - Stego
   - Sudo
 ---
@@ -44,7 +45,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
 ## Website
-Discovered [island/](http://lianyu.thm/island/) directory:
+Discovered `/island/` directory:
 ```console
 $ gobuster dir -q -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://lianyu.thm/
 
@@ -64,7 +65,7 @@ Found **user vigilante**.
 </body>
 </html>
 ```
-Discovered [island/2100/](http://lianyu.thm/island/2100/) directory:
+Discovered `/island/2100/` directory:
 ```console
 $ gobuster dir -q -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://lianyu.thm/island/
 
@@ -89,7 +90,7 @@ HTML comment is mentioning `.ticket` file extension.
 </body>
 </html>
 ```
-Discovered [island/2100/green_arrow.ticket](http://lianyu.thm/island/2100/green_arrow.ticket) file:
+Discovered `/island/2100/green_arrow.ticket` file:
 ```console
 $ gobuster dir -q -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -u http://lianyu.thm/island/2100/ -x ticket
 

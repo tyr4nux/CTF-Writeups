@@ -3,8 +3,10 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - RCE
+  - Info-Disclosure
+  - Default-Creds
+  - CVE
+  - File-Upload
   - Sudo
   - Systemd
   - PwnKit
@@ -51,7 +53,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 # Discovery
 The following ports contain:
 - 80: default Apache page.
-- 62337: login page for [Codiad web IDE](https://github.com/Codiad/Codiad) 2.8.4 (has multiple [RCE CVEs](https://github.com/WangYihang/Codiad-Remote-Code-Execute-Exploit)).
+- 62337: login page for [Codiad Web IDE](https://github.com/Codiad/Codiad) 2.8.4 (has multiple [RCE CVEs](https://github.com/WangYihang/Codiad-Remote-Code-Execute-Exploit)).
 # Enumeration
 Found a file named `-` in the FTP service:
 ```console

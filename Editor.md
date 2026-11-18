@@ -3,8 +3,9 @@ tags:
   - HTB
   - Easy
   - Linux
-  - RCE
-  - Leakage
+  - CMS
+  - CVE
+  - Code-Injection
   - SUID
   - PATH-HJ
 ---

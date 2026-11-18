@@ -3,7 +3,8 @@ tags:
   - HTB
   - Easy
   - Linux
-  - RCE
+  - CVE
+  - Cmd-Injection
 ---
 https://app.hackthebox.com/machines/Lame/
 # Add Hosts

@@ -6,7 +6,7 @@ tags:
 ---
 # Information
 
-- Machine: [Name](https://app.hackthebox.com/machines/MACHINE)
+- Room: [Name](https://app.hackthebox.com/machines/MACHINE)
 - Target: `<TARGET>`
 - Attacker: `<ATTACKER>`
 

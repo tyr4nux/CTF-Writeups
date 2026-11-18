@@ -3,9 +3,8 @@ tags:
   - HTB
   - Easy
   - Linux
-  - RCE
-  - Leakage
-  - Brute-Force
+  - Code-Injection
+  - Cracking
   - Sudo
 ---
 https://app.hackthebox.com/machines/Code/
