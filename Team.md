@@ -4,9 +4,8 @@ tags:
   - Easy
   - Linux
   - LFI
-  - Leakage
   - Sudo
-  - File-Analysis
+  - Cmd-Injection
   - Cron
 ---
 https://tryhackme.com/room/teamcw/

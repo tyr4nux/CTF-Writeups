@@ -3,10 +3,10 @@ tags:
   - HTB
   - Easy
   - Linux
-  - RCE
+  - CVE
+  - SQLi
   - Docker
-  - Leakage
-  - Forwarding
+  - Port-Forwarding
   - Cron
 ---
 https://app.hackthebox.com/machines/Planning/

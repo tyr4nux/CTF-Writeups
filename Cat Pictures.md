@@ -6,8 +6,7 @@ tags:
   - Port-Knocking
   - Brute-Force
   - Info-Disclosure
-  - Cmd-Injection
-  - Reversing
+  - Web-Shell
   - Docker
   - Cron
 ---
@@ -83,7 +82,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ## Forum
 There is a **forum** for cat pictures in **port 8080**.
 
-One of the [posts](http://cats.thm:8080/viewtopic.php?p=2), contains a hint suggesting **port knocking**:
+One of the posts `/viewtopic.php?p=2`, contains a hint suggesting **port knocking**:
 ```text
 POST ALL YOUR CAT PICTURES HERE
   

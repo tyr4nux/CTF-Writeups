@@ -3,8 +3,8 @@ tags:
   - VulnHub
   - Easy
   - Linux
+  - Info-Disclosure
   - SQLi
-  - Leakage
   - Sudo
   - PATH-HJ
 ---
@@ -32,7 +32,7 @@ MAC Address: 08:00:27:07:5B:3E (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Found [mercuryfacts/](http://mercury.local:8000/mercuryfacts/) directory because Django's debug settings are enabled when visiting a non-existent resource:
+Found `/mercuryfacts/` directory because Django's debug settings are enabled when visiting a non-existent resource:
 ```text
 Page not found (404)
 Request Method: GET
@@ -46,7 +46,7 @@ The current path, abc, didn't match any of these.
 
 You're seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
 ```
-Found **SQL query from Django** at http://mercury.local:8080/mercuryfacts/abc/:
+Found **SQL query from Django** at `/mercuryfacts/abc`:
 ```python
 cursor.execute('SELECT fact FROM facts WHERE id = ' + fact_id)
 ```

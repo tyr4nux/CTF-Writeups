@@ -6,7 +6,6 @@ tags:
   - API
   - Fuzzing
   - LFI
-  - Info-Disclosure
   - Code-Injection
   - SUID
   - Reversing

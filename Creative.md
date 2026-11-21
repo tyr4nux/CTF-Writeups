@@ -6,7 +6,6 @@ tags:
   - SSRF
   - Scripting
   - LFI
-  - Info-Disclosure
   - Cracking
   - Sudo
   - Lib-HJ

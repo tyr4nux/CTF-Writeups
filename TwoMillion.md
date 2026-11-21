@@ -4,8 +4,7 @@ tags:
   - Easy
   - Linux
   - API
-  - Leakage
-  - RCE
+  - Cmd-Injection
   - Kernel
 ---
 https://app.hackthebox.com/machines/TwoMillion/

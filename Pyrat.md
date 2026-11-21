@@ -3,9 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
-  - RCE
+  - Code-Injection
   - Git
-  - Leakage
   - Scripting
   - Brute-Force
 ---
@@ -113,7 +112,7 @@ Get **user flag**:
 cat /home/think/user.txt
 ```
 ## Git Repo Restoration
-Get latest changes to the Git repo:
+Get latest changes from the Git repo:
 ```console
 $ cd /opt/dev && git status
 

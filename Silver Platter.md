@@ -3,9 +3,9 @@ tags:
   - THM
   - Easy
   - Linux
+  - CVE
   - Auth-Bypass
   - IDOR
-  - Leakage
   - Sudo
 ---
 https://tryhackme.com/room/silverplatter/
@@ -30,11 +30,11 @@ PORT     STATE SERVICE    VERSION
 |_http-title: Error
 ```
 # Discovery
-Found `scr1ptkiddy` username and [silverpeas/](http://silver.thm:8080/silverpeas/) directory by using information from the [contact](http://silver.thm/#contact) section running on port 80:
+Found `scr1ptkiddy` username and `/silverpeas/` directory (port 8080) by using information from the `/#contact` section (port 80):
 ```text
 If you'd like to get in touch with us, please reach out to our project manager on Silverpeas. His username is "scr1ptkiddy".
 ```
-The [Silverpeas](https://www.silverpeas.org/) login panel running on port 8080 is from 2022:
+The [Silverpeas](https://www.silverpeas.org/) login panel running on port 8080 is from year 2022:
 ```console
 $ curl -s http://silver.thm:8080/silverpeas/defaultLogin.jsp | html2text --ignore-links | tail -n 2
 
@@ -52,7 +52,8 @@ Origin: http://silver.thm:8080
 Login=scr1ptkiddy&DomainId=0
 ```
 ## Reading messages
-Found **SSH credentials** of **user tim** in a message sent by the administrator. The message is read by changing the `ID` parameter as explained in [CVE-2023-47323](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47323) at http://silver.thm:8080/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=6:
+Found **SSH credentials** of **user tim** in a message sent by the administrator. The message was read by changing the `ID` parameter for `/silverpeas/RSILVERMAIL/jsp/ReadMessage.jsp?ID=6` as explained in [CVE-2023-47323](https://github.com/RhinoSecurityLabs/CVEs/tree/master/CVE-2023-47323):
+
 ```text
 Dude how do you always forget the SSH password? Use a password manager and quit using your silly sticky notes. 
 

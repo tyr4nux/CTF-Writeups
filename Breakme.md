@@ -14,6 +14,7 @@ tags:
   - Race-Condition
   - Cracking
   - Sudo
+  - Code-Injection
 ---
 https://tryhackme.com/room/breakmenu/
 # Add Hosts

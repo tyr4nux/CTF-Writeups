@@ -4,9 +4,9 @@ tags:
   - Easy
   - Linux
   - IDOR
-  - Leakage
-  - File-Analysis
-  - Brute-Force
+  - Info-Disclosure
+  - PCAP
+  - Cracking
   - Cron
   - Lib-HJ
 ---
@@ -34,10 +34,10 @@ Service Info: OSs: Linux, Unix; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
 ## Website
-In the website, the [gallery section](http://valley.thm/gallery/gallery.html) contains images with predictable names like:
-- http://valley.thm/static/1
-- http://valley.thm/static/2
-- http://valley.thm/static/3
+In the website, the gallery section at `/gallery/gallery.html` contains images with predictable names like:
+- `http://valley.thm/static/1`
+- `http://valley.thm/static/2`
+- `http://valley.thm/static/3`
 
 Found note from **user valleyDev**:
 ```console
@@ -49,7 +49,7 @@ dev notes from valleyDev:
 -remove /dev1243224123123
 -check for SIEM alerts
 ```
-Found login page at [/dev1243224123123](http://valley.thm/dev1243224123123). Then, found credentials of **user siemDev** inside a loaded JavaScript file.
+Found login page at `/dev1243224123123`. Then, found credentials of **user siemDev** inside a loaded JavaScript file.
 `curl -s http://valley.thm/dev1243224123123/dev.js | tail -n 12`:
 ```javascript
 loginButton.addEventListener("click", (e) => {

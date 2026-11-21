@@ -4,8 +4,9 @@ tags:
   - Easy
   - Windows
   - AD
-  - Brute-Force
+  - RID-Cycling
   - Kerberoasting
+  - Cracking
   - PtH
 ---
 https://tryhackme.com/room/soupedecode01/

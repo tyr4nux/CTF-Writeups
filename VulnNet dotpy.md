@@ -4,7 +4,7 @@ tags:
   - Medium
   - Linux
   - SSTI
-  - RCE
+  - Code-Injection
   - Sudo
   - Lib-HJ
 ---

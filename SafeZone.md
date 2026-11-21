@@ -3,13 +3,16 @@ tags:
   - THM
   - Medium
   - Linux
-  - Leakage
+  - Info-Disclosure
   - Scripting
   - Brute-Force
   - LFI
   - Log-Poisoning
-  - RCE
+  - Cracking
+  - Port-Forwarding
+  - Web-Shell
   - Sudo
+  - Cmd-Injection
 ---
 https://tryhackme.com/room/safezone/
 # Add Hosts

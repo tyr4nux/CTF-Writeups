@@ -4,8 +4,9 @@ tags:
   - Easy
   - Windows
   - AD
-  - Brute-Force
+  - RID-Cycling
   - AS-REP
+  - Cracking
   - Kerberoasting
   - DCSync
   - PtH

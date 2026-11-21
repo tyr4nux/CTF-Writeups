@@ -4,11 +4,9 @@ tags:
   - Medium
   - Linux
   - SQLi
-  - Brute-Force
-  - CMS
-  - RCE
+  - Cracking
+  - WordPress
   - Sudo
-  - File-Analysis
   - PATH-HJ
 ---
 https://tryhackme.com/room/wekorra/

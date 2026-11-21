@@ -3,8 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
-  - Leakage
-  - RCE
+  - Info-Disclosure
+  - Web-Shell
   - Sudo
 ---
 https://tryhackme.com/room/picklerick/
@@ -29,7 +29,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Found **username** `R1ckRul3s` in HTML comment at http://rick.thm/index.html:
+Found **username** `R1ckRul3s` in HTML comment at `/index.html`:
 ```html
 <!--
 	

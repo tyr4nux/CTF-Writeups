@@ -3,9 +3,9 @@ tags:
   - THM
   - Easy
   - Linux
+  - Auth-Bypass
   - SQLi
   - File-Upload
-  - RCE
   - Cron
   - SUID
 ---

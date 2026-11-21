@@ -4,8 +4,9 @@ tags:
   - Easy
   - Linux
   - IDOR
-  - Leakage
-  - RCE
+  - Info-Disclosure
+  - CVE
+  - Code-Injection
   - Sudo
 ---
 https://tryhackme.com/room/whiterose/

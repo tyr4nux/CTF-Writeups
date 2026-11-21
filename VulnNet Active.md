@@ -4,9 +4,8 @@ tags:
   - Medium
   - Windows
   - Responder
-  - Brute-Force
-  - Cron
-  - RCE
+  - Cracking
+  - Schtasks
   - SeImpersonatePrivilege
 ---
 https://tryhackme.com/room/vulnnetactive/

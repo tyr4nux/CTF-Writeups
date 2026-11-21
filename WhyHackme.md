@@ -3,11 +3,11 @@ tags:
   - THM
   - Medium
   - Linux
-  - Leakage
+  - Info-Disclosure
   - XSS
-  - Security-SW
+  - PCAP
+  - Web-Shell
   - Sudo
-  - RCE
 ---
 https://tryhackme.com/room/whyhackme/
 # Add Hosts

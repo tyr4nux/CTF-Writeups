@@ -3,10 +3,9 @@ tags:
   - THM
   - Medium
   - Linux
-  - Leakage
   - Scripting
   - Deserialization
-  - Security-SW
+  - Reversing
   - Sudo
 ---
 https://tryhackme.com/room/peakhill/
@@ -329,6 +328,12 @@ dill
 ```
 Since we can not get a reverse shell with conventional commands due to the **firewall restrictions**, we get the SSH private key at `/home/dill/.ssh/id_rsa` and save it locally as `dill_rsa`. Then, we re-connect to the machine and get the **user flag**:
 ```console
+Cmd: cat /home/dill/.ssh/id_rsa
+...
+^C
+
+$ nano dill_rsa
+
 $ chmod 600 dill_rsa
 
 $ ssh -i dill_rsa dill@peakhill.thm

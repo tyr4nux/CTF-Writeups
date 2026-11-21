@@ -3,7 +3,7 @@ tags:
   - HTB
   - Easy
   - Linux
-  - Brute-Force
+  - Cracking
   - Sudo
 ---
 https://app.hackthebox.com/machines/UnderPass/
@@ -27,9 +27,11 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Discovered login panel at http://underpass.htb/daloradius/app/operators/login.php, successful login with daloRADIUS **default credentials**: `administrator : radius`.
+Discovered login panel at `/daloradius/app/operators/login.php`, successful login with daloRADIUS **default credentials**: `administrator : radius`.
 # Cracking MD5
-Navigate to [management > list users](http://underpass.htb/daloradius/app/operators/mng-list-all.php) to find **username** `svcMosh` and **MD5 hashed password** `412DD4759978ACFCC81DEAB01B382403`. Using [CrackStation](https://crackstation.net/), the password is `underwaterfriends`. Then, log in via SSH:
+Navigate to **management > list users** to find **username** `svcMosh` and **MD5 hashed password** `412DD4759978ACFCC81DEAB01B382403`. Then, crack the hash using [CrackStation](https://crackstation.net/).
+
+After that, log in via SSH:
 ```bash
 ssh svcMosh@UnDerPass.htb
 ```

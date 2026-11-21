@@ -4,8 +4,7 @@ tags:
   - Easy
   - Linux
   - File-Upload
-  - RCE
-  - KeePass
+  - Cracking
   - Cron
   - Lib-HJ
 ---
@@ -48,7 +47,7 @@ Host script results:
 |_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 ```
 # Enumeration
-Found `/cloud` directory, which is a **5-minute image cloud storage** website:
+Found `/cloud/` directory, which is a **5-minute image cloud storage** website:
 ```console
 $ gobuster dir -q -r -u http://opacity.thm -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
 

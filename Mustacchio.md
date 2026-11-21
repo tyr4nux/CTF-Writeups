@@ -70,7 +70,7 @@ Cracked **admin password** using [CrackStation](https://crackstation.net/): `bul
 ## XXE
 Successful log in as **admin** in login panel at port 8765. The website is a comment submission form that receives XML data.
 
-Found that **user barry** has enabled SSH and discovered `/auth/dontforget.bak` file in the comments of [home.php](http://mustacchio.thm:8765/home.php) (only available after log in):
+Found that **user barry** has enabled SSH and discovered `/auth/dontforget.bak` file in the comments of `/home.php` (only available after log in):
 ```
 //document.cookie = "Example=/auth/dontforget.bak"; 
 

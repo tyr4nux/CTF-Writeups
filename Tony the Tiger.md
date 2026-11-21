@@ -3,9 +3,8 @@ tags:
   - THM
   - Easy
   - Linux
+  - CVE
   - Deserialization
-  - RCE
-  - Leakage
   - Sudo
 ---
 https://tryhackme.com/room/tonythetiger/

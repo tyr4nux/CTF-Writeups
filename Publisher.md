@@ -3,9 +3,9 @@ tags:
   - THM
   - Easy
   - Linux
-  - RCE
-  - Security-SW
-  - File-Analysis
+  - CVE
+  - Code-Injection
+  - AppArmor
   - PATH-HJ
   - SUID
 ---
@@ -33,7 +33,7 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 # Enumeration
-Found http://publisher.thm/spip/ directory:
+Found `/spip/` directory:
 ```console
 $ gobuster dir -q -u http://publisher.thm -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
 

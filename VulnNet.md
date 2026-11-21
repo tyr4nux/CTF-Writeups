@@ -3,12 +3,11 @@ tags:
   - THM
   - Medium
   - Linux
-  - Leakage
   - LFI
-  - Brute-Force
+  - Cracking
   - CMS
+  - CVE
   - File-Upload
-  - RCE
   - Cron
 ---
 https://tryhackme.com/room/vulnnet1/
