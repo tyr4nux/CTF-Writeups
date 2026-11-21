@@ -1,22 +1,3 @@
-# Temp Scripts
-
-- Change tag name for another.
-- Check for files with `john` / `hashcat` / `crackstation` but no `Cracking` tag.
-- Check for files with `CVE` but no `CVE` tag.
-- Check for files with `fuzz` but no `Fuzzing` tag.
-- Check for files with `wp` / `wordpress` but no `WordPress` tag.
-- Re-add RCE for web shells.
-- Check CVE for Code-Injection, Cmd-Injection or Web-Shell
-
-# Change
-
-- CMS -> Wordpress
-- File-Analysis -> Reversing
-- Forwarding -> Port-Forwarding
-- Leakage -> Info-Disclosure
-- RCE -> Cmd-Injection / Code-Injection
-- Security-SW -> AppArmor
-
 # Platform
 
 - HTB
@@ -57,6 +38,7 @@
 - SQLi
 - SSRF
 - SSTI
+- Web-Shell
 - XSS
 - XXE
 
